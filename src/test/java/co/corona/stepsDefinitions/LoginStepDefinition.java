@@ -26,7 +26,7 @@ public class LoginStepDefinition {
 
     @Managed (driver = "chrome")
     private WebDriver navegador;
-    private Actor doug = Actor.named("doug");
+    private Actor   doug = Actor.named("doug");
 
     private LoginIngresoPage loginIngresoPage = new LoginIngresoPage();
     private LoginRegistroPage loginRegistroPage = new LoginRegistroPage();

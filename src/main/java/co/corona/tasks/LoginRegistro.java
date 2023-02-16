@@ -46,11 +46,17 @@ public class LoginRegistro implements Task {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-       // esperaImplicita.esperaImplicita(5);
+
 
         actor.attemptsTo(
-                Click.on(CHECK_CAPTCHA),
+                Click.on(CHECK_CAPTCHA)
+
+        );
+        esperaImplicita.esperaImplicita(15);
+
+        actor.attemptsTo(
                 Click.on(BTN_REGISTAR)
+
         );
 
 
